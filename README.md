@@ -36,4 +36,4 @@ Schedule WhatsApp messages using Telegram Bot + Python. Basically the Python scr
 
 - Multiple people cannot use the same bot. If your friend wants to use it, you'll have to go through all the steps again to set it up for them. 😱
 
-
+Notes to meself: took me 21 days in total to go from 'idea' to 'final product' (basic goal suggested by bro). 18 of which went into trying to make Headless broswer + Saved Profile work, firstly locally, then on Heroku. The logic building of mastermind.py & app.py flask application both combined took approx 3 days, once i saw selenium was successful on each Heroku attempt. 5/7 would do again lol.
