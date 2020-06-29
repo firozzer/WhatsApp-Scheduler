@@ -130,7 +130,7 @@ def get_response(text, chat_id):
             bot.sendMessage(chat_id=xxxxx, text=data) # not putting return here because otherwise it will exit the thread
             return "Copy the above message and keep it safe somewhere. DO NOT alter it; paste it back in unaltered while restoring, otherwise you'll face unexpected problems."
         except:
-            return "Nooooo scheduled tasks available to backup."
+            return "No scheduled tasks available to backup."
     elif text == "/restore":
         with io.open('job.txt', "w") as f: f.write("""!)@(Restor!ng!)@(""") #decided to write in jobs itself as opening another file tremendously slows down the bot
         return "HOL' UP! This will overwrite your existing scheduled tasks if any. To continue, send the message you received as backup else send /restart to cancel. "
@@ -271,7 +271,7 @@ def get_response(text, chat_id):
                         job = data.split("~^f*+")
                         return f"""Will send "{job[1]}" to "{job[0]}" on {text[:2]} {calendar.month_name[int(text[2:4])]} {nextyear} @ {text[-4:]} hrs (NEXT YEAR). Confirm? (y/n)"""
                 else:
-                    print('UNKNOWNNNNN ERRRORRRR')
+                    return 'UNKNOWNNNNN ERRRORRRR'
         except: #this part writes message to file
             print('came inside time asker?')
             with io.open('job.txt', "a", encoding="utf-8") as f: f.write(text + "~^f*+")
