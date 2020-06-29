@@ -18,8 +18,6 @@ def respond():
     chat_id = update.message.chat.id
     # get the message id to be able to reply to this specific message
     msg_id = update.message.message_id
-    # sender_id = update.sender.id
-    # print(f"SENDERRRRRR {sender_id}")
 # Telegram understands UTF-8, so encode text for unicode compatibility
     try:
         print("got text messageeeeee:", update.message.text)
