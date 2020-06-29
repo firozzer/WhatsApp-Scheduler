@@ -18,7 +18,7 @@ Schedule WhatsApp messages using Telegram Bot + Python. Basically the Python scr
 
 # Quick overview of what each file does:
 
-- app.py is the Flask application that runs & listens for incoming Telegram messages to the bot. (If you're running locally, run app.py)
+- app.py is the Flask application that runs & listens for incoming Telegram messages to the bot. It is the file that you need to execute to get everything off the ground.
 
 - mastermind.py Processes whatever the user sent & replies accordingly.
 
