@@ -84,8 +84,3 @@ def sendScheduledMessage(name, message):
     except Exception as e:
         if driveron == True: driver.quit()
         return f"""Error: Some unkown error occured while trying to send "{message}" to {name}. Could be this- {e}"""
-
-
-# driver = webdriver.Firefox(firefox_profile=fp, options=options, executable_path=os.environ.get("GECKODRIVER_PATH"),firefox_binary=os.environ.get("FIREFOX_BIN"))
-# https://api.whatsapp.com/send?phone=971508984405&text=thisisatest direct API call but doesn't work unless you click on it inside web whatsapp as a chat
-# https://web.whatsapp.com/send?phone=971508984405&text=thisisatest goes directly nice tho
