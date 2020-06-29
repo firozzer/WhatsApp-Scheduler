@@ -16,6 +16,16 @@ Schedule WhatsApp messages using Telegram Bot + Python. Basically the Python scr
 
 - To deploy on Heroku: Create a Heroku app. Add this buildpack (https://github.com/evosystem-jp/heroku-buildpack-firefox) & set the config vars as directed. Add Python buildpack. Update the URL to your app inside the creds.py file. Login to Heroku via terminal inside the folder containing the py files (Heroku CLI & Git must be pre-installed). Deploy everything to your app by following the steps shown under the 'Deploy' tab on your Heroku app page on the website. Browse "YourHerokuAppURL/setwebhook" and you should see "webhook set up ok", at which point all ops are a go!
 
+# Quick overview of what each file does:
+
+- app.py is the Flask application that runs & listens for incoming Telegram messages to the bot.
+
+- mastermind.py Processes whatever the user sent & replies accordingly.
+
+- sendSWA.py gets run whenever the WA message was scheduled to be sent.
+
+- creds.py contains a few credentials.
+
 # Remarks:
 
 - There is a delay of about 30-40 seconds in the message getting sent. For eg) if you schedule the message to be sent at 06:16, the message will get delivered around 6:16:35 or so. You can tweak the timing changes in the code if you want more accuracy.
