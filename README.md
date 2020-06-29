@@ -1,8 +1,8 @@
 # WhatsApp-Scheduler
 
-Schedule WhatsApp messages using Telegram Bot + Python. Basically the Python script opens up WhatsApp Web & sends your message by interacting with the page using Selenium. NOTE - This project works only for a single user. Not sure how to go about implementing multi-user functionality.
+Schedule WhatsApp messages using Telegram Bot + Python. Basically the Python script opens up WhatsApp Web & sends your message by interacting with the page using Selenium. NOTE: This project works only for a single user. Not sure how to go about implementing multi-user functionality.
 
-To get it up and running, follow these steps:
+# Follow these steps to get it up & running:
 
 - Clone all the files from repository into a local folder. Create a new file "threadstatus.txt" and leave it blank inside.
 
@@ -14,7 +14,9 @@ To get it up and running, follow these steps:
 
 - To deploy on Heroku: Create a Heroku app. Add this buildpack (https://github.com/evosystem-jp/heroku-buildpack-firefox) & set the config vars as directed. Add Python buildpack. Update the URL to your app inside the creds.py file. Login to Heroku via terminal inside the folder containing the py files (Heroku CLI & Git must be pre-installed). Deploy everything to your app by following the steps shown under the 'Deploy' tab on your Heroku app page on the website. Browse "YourHerokuAppURL/setwebhook" and you should see "webhook set up ok", at which point all ops are a go!
 
-Remarks:
+# Remarks:
+
+- There is a delay of about 30-40 seconds in the message getting sent. For eg) if you schedule the message to be sent at 06:16, the message will get delivered around 6:16:35 or so. You can tweak the timing changes in the code if you want more accuracy.
 
 - I have tested using Firefox profile made in Kali and it works swell. If you use a Firefox Profile made on Windows, the code won't work on Heroku, probably because WhatsApp Web verifies the OS on which the profile was made.
 
