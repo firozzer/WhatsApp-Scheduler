@@ -37,8 +37,6 @@ def sendScheduledMessage(name, message):
         except:
             driver.save_screenshot('ss.png')
             sendImage('ss.png')
-            # bot = telegram.Bot(token="1239945586:AAFbGwRcBFjNiVvM8sCBsjBfAEyS1grjJ-k")
-            # bot.send_photo(chat_id="706830601", photo=open('ss.png', 'rb'))
             driver.quit()
             return f"""Error: WA W could not reach your phone when to trying to send "{message}" to {name}."""
         print('got searchbar')
