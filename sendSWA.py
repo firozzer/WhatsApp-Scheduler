@@ -1,6 +1,3 @@
-# to finally make this work i got the Firefox profile from Kali Linux & used it here without any user agent. Kali Linux i went into Live mode & used the default ESR Firefox & got the profile from /home/kali/.mozilla/firefox.
-# Common errors: argument of type 'NoneType' is not iterable - remove path locations of binary & geckodriver
-
 import requests
 import time
 from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
