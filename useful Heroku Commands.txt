@@ -1,0 +1,9 @@
+heroku ps:scale web=1 - turn on the app (scale the app to 1 dyno)
+heroku ps:scale web=0 - turn off the app
+heroku run python sendSWA.py - run a specific file after it has been deployed to Heroku
+heroku ps - remaining free hours
+heroku run bash - Open bash on the dyno
+heroku logs -n 1500 - 1500 lines
+heroku logs -t = live logs
+
+use -a yourAppName in csse you're running the command from any other place than the folder which contains the git project.
