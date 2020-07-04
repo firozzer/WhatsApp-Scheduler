@@ -6,9 +6,11 @@ Schedule WhatsApp messages using Telegram Bot + Python. Basically the Python scr
 
 # Follow these steps to get it up & running:
 
-- Clone all the files from repository into a local folder. Create a new file "threadstatus.txt" and leave it blank inside.
+- Clone all the files from repository into a local folder. Create 3 blank files "joblist.txt", "threadstatus.txt" and "job.txt". First file acts like a Python list & the other 2 act like variables. Doing it like this since in a Flask app every time the app runs all the variables get cleared.
 
 - Inside each 'py' file, i've tagged spots which need modification by "#MODIFYYYYTHIS" (Ctrl F through all the files & modify as per your parameters).
+
+- Setup GSheets using this amazing Tech With Tim tutorial: https://www.youtube.com/watch?v=cnPlKLEGR7E Keep the gsheetJsonKeys you mmake in the same folder. In cells A1, B1, C1, of your GSheet Fileensure to keep exactly these values wout quotes: "Name", "Time", "Message" & rest of the sheet leave blank.
 
 - Create a Firefox Profile using any ubuntu based distro. To make the profile: fire up WhatsApp Web, login manually by scanning the QR code & then simply copy the folder over at /home/username/.mozilla/firefox/profiles. (folder should be between 10 to 40 MB in size) Place this folder next to the py files & modify the code to read the folder name correctly.
 
