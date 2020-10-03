@@ -1,6 +1,6 @@
 # WhatsApp-Scheduler
 
-<b>tl;dr:</b> the Python script opens up WhatsApp Web & sends your message by interacting with the page using Selenium. NOTE: This project works only for a single user. Not sure how to go about implementing multi-user functionality.
+<b>tl;dr:</b> the Python script opens up WhatsApp Web & sends your message by interacting with the page using Selenium. All hosted in cloud thanks to Heroku! :) NOTE: This project works only for a single user. Not sure how to go about implementing multi-user functionality.
 
 Watch it in aktion: https://www.youtube.com/watch?v=iwT5KKVJf6Y
 
