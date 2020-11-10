@@ -21,4 +21,4 @@ data = sheet.get_all_records() # send all tasks
 
 sheet.resize(rows=1); sheet.resize(rows=50) #deletes all rows except first, then adds 49 rows in next line
 
-sheet.update_cell(16,11 "awesome") #will be useful for adding modification code.
+sheet.update_cell(16,11, "awesome") #will be useful for adding modification code.
