@@ -1,4 +1,4 @@
-flask==1.1.1
+flask==2.3.2
 python-telegram-bot
 gunicorn
 requests==2.23.0 
