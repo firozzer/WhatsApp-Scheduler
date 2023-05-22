@@ -1,7 +1,7 @@
 flask==1.1.1
 python-telegram-bot
 gunicorn
-requests==2.23.0 
+requests==2.31.0 
 selenium==3.141.0
 oauth2client
 gspread
